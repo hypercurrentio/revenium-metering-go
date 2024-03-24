@@ -8,7 +8,7 @@ For more information, please visit [https://revenium.io](https://revenium.io)
 
 ## Installation
 ```shell
-go get -u github.com/hypercurrentio/revenium-metering-go
+go get -u github.com/hypercurrentio/revenium-metering-go@v1.0.0
 ```
 
 ## Example
