@@ -11,6 +11,6 @@ package metering
 
 // Dynamic metering elements
 type ElementDto struct {
-	Name string `json:"name"`
+	Name  string `json:"name"`
 	Value string `json:"value"`
 }

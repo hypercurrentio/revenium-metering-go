@@ -1,4 +1,3 @@
-
 /*
  * Revenium Metering API
  *
@@ -24,12 +23,12 @@ var (
 )
 
 type EventsApiService service
+
 /*
 EventsApiService Save can API event
 Save an API event
- * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param body
-
+  - @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+  - @param body
 */
 func (a *EventsApiService) SaveEvent(ctx context.Context, body ApiEventDto) (*http.Response, error) {
 	var (
@@ -37,7 +36,6 @@ func (a *EventsApiService) SaveEvent(ctx context.Context, body ApiEventDto) (*ht
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		
 	)
 
 	// create path and map variables
@@ -82,10 +80,9 @@ func (a *EventsApiService) SaveEvent(ctx context.Context, body ApiEventDto) (*ht
 		return localVarHttpResponse, err
 	}
 
-
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		return localVarHttpResponse, newErr
