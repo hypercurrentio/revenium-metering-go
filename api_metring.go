@@ -23,17 +23,17 @@ var (
 	_ context.Context
 )
 
-type MetringApiService service
+type MeteringApiService service
 
 /*
-MetringApiService Insert API metering data
+MeteringApiService Insert API metering data
 Insert API metering data
   - @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
   - @param body
 
 @return Unit
 */
-func (a *MetringApiService) Meter(ctx context.Context, body MeteringRequestDto) (Unit, *http.Response, error) {
+func (a *MeteringApiService) Meter(ctx context.Context, body MeteringRequestDto) (Unit, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -114,21 +114,21 @@ func (a *MetringApiService) Meter(ctx context.Context, body MeteringRequestDto) 
 }
 
 /*
-MetringApiService Determine if a ProductKey is valid or not
+MeteringApiService Determine if a ProductKey is valid or not
 Determine if a ProductKey is valid or not
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param optional nil or *MetringApiValidOpts - Optional Parameters:
+ * @param optional nil or *MeteringApiValidOpts - Optional Parameters:
      * @param "ProductKey" (optional.String) -  The product key
      * @param "Application" (optional.String) -  The application ID
 @return interface{}
 */
 
-type MetringApiValidOpts struct {
+type MeteringApiValidOpts struct {
 	ProductKey  optional.String
 	Application optional.String
 }
 
-func (a *MetringApiService) Valid(ctx context.Context, localVarOptionals *MetringApiValidOpts) (interface{}, *http.Response, error) {
+func (a *MeteringApiService) Valid(ctx context.Context, localVarOptionals *MeteringApiValidOpts) (interface{}, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}

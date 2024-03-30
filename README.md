@@ -43,7 +43,7 @@ func main() {
 		Elements:        []metering.ElementDto{},
 	}
 
-	_, _, err := apiClient.MetringApi.Meter(context.Background(), request)
+	_, _, err := apiClient.MeteringApi.Meter(context.Background(), request)
 	if err != nil {
 		panic(err)
 	}
@@ -58,8 +58,8 @@ All URIs are relative to *https://api.revenium.io/meter/v1/api*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *EventsApi* | [**SaveEvent**](docs/EventsApi.md#saveevent) | **Post** /event | Save can API event
-*MetringApi* | [**Meter**](docs/MetringApi.md#meter) | **Post** /meter | Insert API metering data
-*MetringApi* | [**Valid**](docs/MetringApi.md#valid) | **Get** /meter/product-key | Determine if a ProductKey is valid or not
+*MeteringApi* | [**Meter**](docs/MeteringApi.md#meter) | **Post** /meter | Insert API metering data
+*MeteringApi* | [**Valid**](docs/MeteringApi.md#valid) | **Get** /meter/product-key | Determine if a ProductKey is valid or not
 
 ## Documentation For Models
 

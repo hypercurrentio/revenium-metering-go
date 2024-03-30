@@ -4,8 +4,8 @@ All URIs are relative to *https://api.revenium.io/meter/v1/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**Meter**](MetringApi.md#Meter) | **Post** /meter | Insert API metering data
-[**Valid**](MetringApi.md#Valid) | **Get** /meter/product-key | Determine if a ProductKey is valid or not
+[**Meter**](MeteringApi.md#Meter) | **Post** /meter | Insert API metering data
+[**Valid**](MeteringApi.md#Valid) | **Get** /meter/product-key | Determine if a ProductKey is valid or not
 
 # **Meter**
 > Unit Meter(ctx, body)
@@ -43,13 +43,13 @@ Determine if a ProductKey is valid or not
 
 ### Required Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***MetringApiValidOpts** | optional parameters | nil if no parameters
+Name | Type                      | Description  | Notes
+------------- |---------------------------| ------------- | -------------
+ **ctx** | **context.Context**       | context for authentication, logging, cancellation, deadlines, tracing, etc.
+ **optional** | ***MeteringApiValidOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a MetringApiValidOpts struct
+Optional parameters are passed through a pointer to a MeteringApiValidOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productKey** | **optional.String**| The product key | 

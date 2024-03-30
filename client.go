@@ -47,7 +47,7 @@ type APIClient struct {
 
 	EventsApi *EventsApiService
 
-	MetringApi *MetringApiService
+	MeteringApi *MeteringApiService
 }
 
 type service struct {
@@ -67,7 +67,7 @@ func NewAPIClient(cfg *Configuration) *APIClient {
 
 	// API Services
 	c.EventsApi = (*EventsApiService)(&c.common)
-	c.MetringApi = (*MetringApiService)(&c.common)
+	c.MeteringApi = (*MeteringApiService)(&c.common)
 
 	return c
 }
